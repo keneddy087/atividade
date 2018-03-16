@@ -8,7 +8,7 @@ import java.util.Date;
  *
  * @author keneddy.149317
  */
-public class Disciplina extends Professor {
+public class Disciplina  {
     private String nome;
     private String departamento;
     private char status;
@@ -18,15 +18,13 @@ public class Disciplina extends Professor {
         return "Disciplinas{" + "nome=" + nome + ", departamento=" + departamento + ", status=" + status + '}';
     }
 
-    public Disciplina(String nome, String departamento, char status, int cargaHoraria, float valorHora, float salario, String nome, String rg, String cpf, int idade, Date dataNascimento, int matricula, Date dataMatricula, ArrayList<Disciplina> disciplinas) {
-        super(cargaHoraria, valorHora, salario, nome, rg, cpf, idade, dataNascimento, matricula, dataMatricula, disciplinas);
+    public Disciplina(String nome, String departamento, char status) {
         this.nome = nome;
         this.departamento = departamento;
         this.status = status;
-    
+    }
 
     
-    }
 
    
 

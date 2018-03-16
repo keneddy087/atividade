@@ -9,7 +9,7 @@ import java.util.Date;
  *
  * @author keneddy.149317
  */
-public class Pessoa extends Aluno{
+public class Pessoa {
     private String nome;
     private String rg;
     private String cpf;
@@ -39,14 +39,15 @@ public class Pessoa extends Aluno{
     return idade;
     }
 
-    public Pessoa(String nome, String rg, String cpf, int idade, Date dataNascimento, int matricula, Date dataMatricula, ArrayList<Disciplina> disciplinas) {
-        super(matricula, dataMatricula, disciplinas);
+    public Pessoa(String nome, String rg, String cpf, int idade, Date dataNascimento) {
         this.nome = nome;
         this.rg = rg;
         this.cpf = cpf;
         this.idade = idade;
         this.dataNascimento = dataNascimento;
     }
+
+   
     @Override
     public String toString() {
         return "Pessoas{" + "nome=" + nome + ", rg=" + rg + ", cpf=" + cpf + ", idade=" + idade + ", dataNascimento=" + dataNascimento + '}';

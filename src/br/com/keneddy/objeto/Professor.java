@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author keneddy.149317
  */
-public class Professor extends Pessoa{
+public class Professor {
     
     private ArrayList<Disciplina> disciplinas;
     private int cargaHoraria;
@@ -25,13 +25,13 @@ public class Professor extends Pessoa{
         return 0;
     }
 
-    public Professor(int cargaHoraria, float valorHora, float salario, String nome, String rg, String cpf, int idade, Date dataNascimento, int matricula, Date dataMatricula, ArrayList<Disciplina> disciplinas) {
-        super(nome, rg, cpf, idade, dataNascimento, matricula, dataMatricula, disciplinas);
+    public Professor(int cargaHoraria, float valorHora, float salario) {
         this.cargaHoraria = cargaHoraria;
         this.valorHora = valorHora;
         this.salario = salario;
     }
 
+   
    
     
     @Override
